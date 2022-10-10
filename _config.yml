@@ -1,12 +1,12 @@
-title: Jekyll Serial Programmer
+title: Data Science Portfolio
 markdown: kramdown
-url: ""
-baseurl: "/jekyll-theme-serial-programmer"
+url: "hugomilesi.github.io"
+baseurl: ""
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: ''
+  email: ''
 
 plugins:
   - jemoji
