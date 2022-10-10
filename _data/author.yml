@@ -1,23 +1,21 @@
-name: Sharad Raj
-dp: https://avatars2.githubusercontent.com/u/36638057?s=460&u=0cbe4fd6b5a3655d91b3eb86db834d0829a0c086&v=4
+name: Hugo Milesi
+dp: https://avatars.githubusercontent.com/u/71730507?s=400&u=3780e196e078f1b9d70862498247a96ed15f68a9&v=4
 description: "
-  <p>
-    Developed by Sharad Raj who lives in India building useful things for the world.
-  </p>
   <br/>
   <p>
-    You should follow him on <a href='https://github.com/sharadcodes' target='_blank'>Github</a>
+    Hello there, i'm Hugo Milesi. I hold a degree in Information Systems and currently focusing to become a machine learning scientist.
+  </P>
+  <br/>
+  <p>
+    This portfolio contains some personal projects completed by me for academic, self learning and hobby purposes. Feel free to take a look at them.
   </P>
 "
-email: dev_sharad@outlook.com
+email: hugogmilesi@gmail.com
 contact:
   - title: linkedin
-    url: https://www.linkedin.com/in/srsmaurya
+    url: https://www.linkedin.com/in/hugo-milesi-68b100209/
   - title: github
-    url: https://github.com/sharadcodes
-  - title: twitter
-    url: https://twitter.com/iamsharadraj
-  - title: dev
-    url: https://dev.to/sharadcodes
+    url: https://github.com/hugomilesi
+
   - title: email
-    url: mailto:dev_sharad@outlook.com
+    url: mailto:hugogmilesi@gmail.com
