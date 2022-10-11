@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Markdown
-date: 2021-11-04
+date: 2022-10-11
 categories: ["jekyll", "Test Post", "first post"]
 ---
 
@@ -17,7 +17,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 Images can be clicked to enlarge :)
 
-![Dummy Image 1](https://picsum.photos/1366/768)
+![Dummy Image 1](/screenshots/chart.png)
 ![Dummy Image 2](https://picsum.photos/1200/400)
 
 # Header 1
