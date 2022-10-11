@@ -25,7 +25,7 @@ categories: [financial, python]
 * [2. How a moving average will behave on these charts?](#2)
     * [2.1. Plotting Moving Averages in all stocks for better analysis](#2.1)
 * [3. Why volume is important?](#3)
-* [4. What was the daily return average of a stock?](#4)
+* [4. Daily Returns](#4)
     * [4.1. Checking Correlations between stocks returns](#4.1)
 
 
@@ -352,7 +352,7 @@ plt.tight_layout()
 
 ---
 <a id = 4></a>
-# What was the daily return average of a stock.
+# Daily Returns.
 
 
 ```python
@@ -563,8 +563,8 @@ returns_df.tail()
 
 
 ---
-### Let's create a scatterpltlot to visualize any correlations between the stocks we're analyzing.
-- First we'll visualize a __jointplot__ for the relationshop between the daily return of a stock to itself.
+### Let's create a jointplot to visualize possible correlations between stocks.
+- First we'll plot a __jointplot__ for the relationship between the daily return of a stock.
 
 
 ```python
@@ -618,3 +618,6 @@ sns.pairplot(returns_df.dropna(), kind = 'reg')
 - Pairplot helps to detect correlations between all the columns of the dataset.
 - It works like a grid, plotting the X-axis against Y-axis creating multiple plots.
 - Since the dataset we're plotting has 4 measurements, it creates a 4 x 4 grid plot.
+
+
+Full code [HERE](https://github.com/hugomilesi/Data_Science/blob/main/MicroProjects/stock_EDA_analysis.ipynb)
