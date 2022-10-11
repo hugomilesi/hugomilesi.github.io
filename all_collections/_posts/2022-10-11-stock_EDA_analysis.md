@@ -580,13 +580,24 @@ sns.jointplot('VALE3.SA', 'VALE3.SA', returns_df, kind = 'reg', color = 'oranger
 As expected, the relationship is perfectly linear because we're trying to correlate something with itself. Now, let's check out the relationship between VALE3.SA and PETR4.SA daily returns.
 
 ### How jointplot works
-- A joint plot provides a concise way to understand both the relationship between two variables aswell as individual distrubution o each variable.
-- The middle figure stands for the relationship plot. It shows how y and x are related.
-- The histogram above shows how the **X** distrubution looks like.
-- The histogram on the right shows how the **Y** distrubution looks like.
-- The upper and right plots together gives us a sense of what the marginal distribution look like from both x and y. 
----
-
+<div style = 'border:1px dashed white; border-radius:5px; padding:15px'>
+  <li>
+    A joint plot provides a concise way to understand both the relationship between two variables aswell as individual distrubution o each variable.
+  </li>
+  <li>
+    The middle figure stands for the relationship plot. It shows how y and x are related.
+  </li>
+  <li>
+    The histogram above shows how the **X** distrubution looks like.
+  </li>
+  <li>
+    The histogram on the right shows how the **Y** distrubution looks like.
+  </li>
+  <li>
+    The upper and right plots together gives us a sense of what the marginal distribution look like from both x and y.
+  </li> 
+</div>
+<br>
 
 ```python
 sns.jointplot('VALE3.SA', 'PETR4.SA', returns_df, kind = 'reg', color = 'dodgerblue')
