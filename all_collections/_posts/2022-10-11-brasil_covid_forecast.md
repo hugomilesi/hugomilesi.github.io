@@ -461,6 +461,8 @@ px.line(x = pd.date_range(first_day, brasil.observationdate.max())[1:],
 
 ![png](/screenshots/posts/brasil_covid/output_24_0.png)
 
+### Making Predictions
+
 ```python
 from statsmodels.tsa.seasonal import seasonal_decompose
 import matplotlib.pyplot as plt
