@@ -523,6 +523,7 @@ plt.show()
 
 
 ### ARIMA MODEL
+- Auto Regressive Integrated Moving Average is used to...
 
 
 ```python
