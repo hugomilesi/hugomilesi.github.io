@@ -2,7 +2,7 @@
 layout: post
 title: Brazil Covid
 date: 2022-10-11
-categories: [financial, python]
+categories: [covid, python]
 ---
 
 ```python
