@@ -523,7 +523,8 @@ plt.show()
 
 
 ### ARIMA MODEL
-- Auto Regressive Integrated Moving Average is used to...
+- Auto Regressive Integrated Moving Average are used to predict future points.
+- Used in charts that shows some trend. It won't work well on stationary data.
 
 
 ```python
