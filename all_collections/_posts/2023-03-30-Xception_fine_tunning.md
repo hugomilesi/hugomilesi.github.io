@@ -15,6 +15,11 @@ categories: [Computer Vision, python, Transfer learning, fine tunning]
 * [4. Fine Tuning](#4)
 * [5. Avaliando o Modelo](#5)
     * [5.1. Matriz de Confusão](#5.1)
+    * [5.2. Gráfico de uma Função de Erro](#5.2)
+    * [5.3. Gráfico de Acurácia](#5.3)
+    * [5.4. Testando Novas Imagens](#5.4)
+
+
 
 <style>
   h1{color: #ff71ce; text-align:center}
@@ -782,7 +787,7 @@ plt.show()
   <li id  = 'li-elem'>Como podemos ver, a medida em que as épocas aumentam, a função de erro diminui, o que é esperado que aconteça.</li>
 </ul>
 
-<h2 id = '5.3'> Accuracy Chart</h2>
+<h2 id = '5.3'> Gráfico de Acurácia</h2>
 
 
 ```python
@@ -801,7 +806,7 @@ plt.show()
   <li id  = 'li-elem'>Como podemos ver, a medida em que as épocas aumentam, maior a acurácia fica, o é esperado de um modelo bem treinado.</li>
 </ul>
 
-<h2 id = '5.3'> Testando Novas Imagens</h2>
+<h2 id = '5.4'> Testando Novas Imagens</h2>
 
 <p>Para fazer o teste com uma imagem específica, estarei coletando do conjunto de validação, desde que é um conjunto que o modelo não treinou, então ele nunca 'viu' as imagens.</p>
 
