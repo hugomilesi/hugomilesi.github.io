@@ -215,7 +215,7 @@ moveFiles(train_path, val_medium, 'medium', 30)
 
     'Folder has already files in inside'
 
-<p>Já que o dataset não contém um conjunto de validação, criei a função <strong>moveFiles()</strong> para fazer exatamente isso. Ela move uma determinada quantidade de dados do conjunto de treino, neste caso 30 imagens de cada tipo de grão de feijão para o cojnunto de dados de validação.</p>
+<p>Já que o dataset não contém um conjunto de validação, criei a função <strong>moveFiles()</strong> para fazer exatamente isso. Ela move uma determinada quantidade de dados do conjunto de treino, neste caso 30 imagens de cada tipo de grão de café para o cojnunto de dados de validação.</p>
 
 <p>Agora com os 3 conjuntos devidamente separados(train, test, validation), podemos prosseguir com a etapa de pre-processamento das imagens.</p>
 
@@ -323,7 +323,7 @@ def show_images(folder_path, samples = 5, figsize = (30, 5)):
       # transformando a matriz de pixels em imagem
       ax[image_num].imshow(image_matrix)
             
-      # exibindo o tipo de grão de feijão selecionado.
+      # exibindo o tipo de grão de café selecionado.
       ax[image_num].set_title(random_image_name)
     
 ```
@@ -334,25 +334,25 @@ show_images(train_path, 7, figsize = (30,5))
 ```
 
 
-<p>Grãos de feijão do tipo "green".</p>    
+<p>Grãos de café do tipo "green".</p>    
 ![png](/screenshots/posts/xception/output_14_0.png)
     
 
 
 
-<p>Grãos de feijão do tipo "light".</p>        
+<p>Grãos de café do tipo "light".</p>        
 ![png](/screenshots/posts/xception/output_14_1.png)
     
 
 
 
-<p>Grãos de feijão do tipo "dark".</p>        
+<p>Grãos de café do tipo "dark".</p>        
 ![png](/screenshots/posts/xception/output_14_2.png)
     
 
 
 
-<p>Grãos de feijão do tipo "medium".</p>        
+<p>Grãos de café do tipo "medium".</p>        
 ![png](/screenshots/posts/xception/output_14_3.png)
     
 
@@ -364,25 +364,25 @@ show_images(test_path, 7, figsize = (30,5))
 ```
 
 
-Grãos de feijão do tipo "green"   
+Grãos de café do tipo "green"   
 ![png](/screenshots/posts/xception/output_15_0.png)
     
 
 
 
-Grãos de feijão do tipo "light"    
+Grãos de café do tipo "light"    
 ![png](/screenshots/posts/xception/output_15_1.png)
     
 
 
 
-Grãos de feijão do tipo "dark"    
+Grãos de café do tipo "dark"    
 ![png](/screenshots/posts/xception/output_15_2.png)
     
 
 
 
-Grãos de feijão do tipo "medium"    
+Grãos de café do tipo "medium"    
 ![png](/screenshots/posts/xception/output_15_3.png)
     
 
@@ -394,25 +394,25 @@ show_images(validation_path, 7, figsize = (30,5))
 ```
 
 
-Grãos de feijão do tipo "green"   
+Grãos de café do tipo "green"   
 ![png](/screenshots/posts/xception/output_16_0.png)
     
 
 
 
-Grãos de feijão do tipo "light"       
+Grãos de café do tipo "light"       
 ![png](/screenshots/posts/xception/output_16_1.png)
     
 
 
 
-Grãos de feijão do tipo "dark"       
+Grãos de café do tipo "dark"       
 ![png](/screenshots/posts/xception/output_16_2.png)
     
 
 
 
-Grãos de feijão do tipo "medium"       
+Grãos de café do tipo "medium"       
 ![png](/screenshots/posts/xception/output_16_3.png)
     
 
@@ -858,7 +858,7 @@ def pred_and_plot(model, filename, class_names):
 
 
 ```python
-# selecionando um grão de feijão aleatório dentro do conjunto de validação.
+# selecionando um grão de café aleatório dentro do conjunto de validação.
 random_folder = random.choice(os.listdir(validation_path))
 # selecionando um arquivo de grão de café aleatório
 random_image = random.choice(os.listdir(validation_path + '/' + random_folder + '/'))
