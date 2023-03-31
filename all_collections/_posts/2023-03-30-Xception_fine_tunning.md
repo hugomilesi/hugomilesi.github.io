@@ -165,7 +165,6 @@ print(f'\nDark train coffee: {len(dark_train)} \nGreen train coffee: {len(green_
   <li id = 'li-elem'>Dados de validação são usados para verificar a estabilidade do modelo.</li>
   <li id = 'li-elem'>Funcionam como uma espécie de garantia de que o modelo tenha captado a maioria dos padrões dos dados.</li>
   <li id = 'li-elem'>Evita a captação de ruídos (variância e viés baixos).</li>
-
 </ul>
 
 ```python
@@ -474,13 +473,13 @@ data_transformation_images(train_path, train_datagen, no_of_samples = 10)
 <h1 id = '3'>Transfer Learning com Xception</h1>
 
 <h3>Como Utilizar o Transfer Learning?</h3>
-<p>O transfer learning nada mais é que reutilizar os pesos(weights) do modelo pré-treinado pararelizar uma tarefa semelhante.</p>
+
 <ul id = 'lista'>
-  <li id = 'li-elem'>O transfer learning nada mais é que reutilizar os pesos(weights) de um modelo pré-treinado para relizar uma tarefa semelhante.</li>
+  <li id = 'li-elem'>O transfer learning éo processo de reutilizar os pesos(weights) de um modelo pré-treinado para relizar uma tarefa semelhante.</li>
 
   <li id = 'li-elem'>É comumente utilizada quando fica difícil aumentar a acuracidade da classificação devida a baixa quantidade de imagens de treino.</li>
 
-  <li id = 'li-elem'>É importante especificar, que neste processo de transfer learning, estarei utilizando da técnica de <strong>Extrator de Atributos Integrados</strong>, onde as camadas do modelo pré treinado são 'congeladas' durante o treino e somente as novas camadas criadas unicamente pra a classificação dos grãos de café serão treinadas para resolver o problema(fine-tuning). </li>
+  <li id = 'li-elem'>É importante especificar, que neste processo de transfer learning, estarei utilizando da técnica de <strong>Extrator de Atributos Integrados</strong>, onde as camadas do modelo pré treinado são 'congeladas' durante o treino e somente as novas camadas criadas unicamente pra a classificação dos grãos de café serão treinadas para resolver o problema. </li>
 
   <li id = 'id-elem'>O congelameno é necessário para as camadas <strong>NÃO</strong> treinarem novamente, caso contrário, todos os pesos do modelo ja treinado serão modificados e alterados novamente.</li>
 </ul>
@@ -525,8 +524,11 @@ xception.summary()
 <h2 id = '3.1'>Entendendo o Transfer Learning</h2>
 <ul id = 'lista'>
   <li id = 'li-elem'>No resumo do modelo, temos uma visualização melhor da importância do transfer learning.</li>
+
   <li id = 'li-elem'>Verificamos que o modelo possui mais de 20 milhões de parâmetros, mas apenas 8,196 será treinado.</li>
+
   <li id = 'li-elem'>Isso ocorre devido ao congelamento das camadas, desta forma, obtemos os pesos de um modelo treinado com muito robustez de maneira instantânea, imaginem quanto poder de processamento e tempo levaria pra treinar mais de 20 milhões de parâmetros do zero.</li>
+
   <li id = 'li-elem'>A única camada que será treinada é a camada de saída, sendo esta sendo uma camada especial e necessária responsável por delimitar o número de classificações que desejamos(4 saídas neste caso).</li>
 </ul>
 
@@ -878,4 +880,4 @@ pred_and_plot(xception, test_image, class_names)
 
 <p> Como podemos ver, o arquivo original(medium (37).png) era um grão médio de café e a previsão do modelo foi exatamente um grão médio =D.</p>
 
-Por hoje é só e muito obrigado =P. Aceito críticas de feedbacks construtivos. Caso queira checar o código completo basta clicar [aqui](https://github.com/hugomilesi/Data_Science/blob/main/MicroProjects/Xception_fine_tunning.ipynb).
+Por hoje é só e muito obrigado =P. críticas e feedbacks construtivos são bem vindos. Caso queira checar o código completo basta clicar [aqui](https://github.com/hugomilesi/Data_Science/blob/main/MicroProjects/Xception_fine_tunning.ipynb).
