@@ -228,11 +228,11 @@ validation_path = '/content/coffee_dataset/validation'
 <h2 id = '2.1'> Data Augmentation(Aumento de Dados)</h2>
 
 <ul id = 'lista'>
-  <li id = 'li-elem'>A etapa de aumento de dados é utilizada pra aumentar a diversidade e quantidade dos dados do dataset.</li>
+  <li id = 'li-elem'>A etapa de aumento de dados é utilizada para aumentar a diversidade e quantidade dos dados do dataset.</li>
 
   <li id = 'li-elem'>Muitas vezes, coletar milhões de imagens pra resolver um determinado problema pode ser um processo custoso, inviável e demorado. Para isso, recorremos a este método.</li>
 
-  <li id = 'li-elem'>No processo de Data Augmentation é realizado vários processos de tratamento de imagens como: Rotação da imagem, orientação da imagem, ampliação, recorte, flipping(vertical e horizontal, etc).</li>
+  <li id = 'li-elem'>No processo de Data Augmentation é realizado vários processos de tratamento de imagens como: Rotação da imagem, orientação da imagem, ampliação, recorte, flipping(vertical e horizontal), etc.</li>
 
   <li id = 'li-elem'>No bloco de código abaixo, farei alguns dos processos de tratamento citados acima.</li>
 </ul>
@@ -285,7 +285,7 @@ validation_generator = train_datagen.flow_from_directory(
     
 <h3>Explicação:</h3>
 <ul id = 'lista'>
-  <li id = 'li-elem'> <i>train_datagen é a instância criada do método <i>ImageDataGenerator</i> do TensorFlow que serão responsáveis por realizarem os proecessamentos(amplicação, rotação, etc) nas imagens.</i> </li>
+  <li id = 'li-elem'> <i>train_datagen é a instância criada do método <i>ImageDataGenerator</i> do TensorFlow que será responsável por realizar os processos de aumento de dados(amplicação, rotação, etc) nas imagens.</i> </li>
   
   <li id = 'li-elem'>Como o nome sugere, <i>train_generator, test_generator, validation_generator</i> aplicam o processo de aumento de dados instanciado em <i>train_datagen</i> nos conjuntos de treino, teste e validação.</li>
 
