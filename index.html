@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hugo Milesi · Automação com IA e Dados</title>
+<meta name="description" content="Hugo Milesi: automação com IA e dados. n8n, Python, SQL, PostgreSQL e agentes de IA." />
+<meta name="theme-color" content="#0A0A0A" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230A0A0A'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23D4F050'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#topo" aria-label="Início"><span class="brand-dot"></span>hugo<span class="mute">.milesi</span></a>
+  <nav aria-label="Seções">
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="https://github.com/hugomilesi" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="pulse-dot"></span>// automação · ia · dados</p>
+      <h1 class="reveal">Hugo<br />Milesi</h1>
+      <p class="lede reveal">Automação com <em>IA</em> e <em>Dados</em>. Construção de agentes de IA, integrações e sistemas de gestão que tiram o trabalho repetitivo da rotina.</p>
+      <ul class="stack reveal" aria-label="Stack">
+        <li>n8n</li><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Agentes de IA</li>
+      </ul>
+      <div class="cta reveal">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/hugo-milesi/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.75Z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/hugomilesi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <figure class="hero-flow reveal" aria-label="Animação ilustrativa de um fluxo de automação">
+      <div class="flow-head"><span class="dots"><i></i><i></i><i></i></span><span class="mono">fluxo_atendimento.json</span><span class="live">ao vivo</span></div>
+      <svg class="flow-svg" viewBox="0 0 420 300" role="img" aria-label="Gatilho, agente de IA, consulta SQL e resposta conectados">
+        <defs>
+          <linearGradient id="wire" x1="0" x2="1"><stop offset="0" stop-color="#D4F050" stop-opacity=".15"/><stop offset="1" stop-color="#D4F050" stop-opacity=".5"/></linearGradient>
+        </defs>
+        <path id="w1" class="wire" d="M92 70 C150 70 150 150 190 150" />
+        <path id="w2" class="wire" d="M92 230 C150 230 150 150 190 150" />
+        <path id="w3" class="wire" d="M262 150 C300 150 300 70 330 70" />
+        <path id="w4" class="wire" d="M262 150 C300 150 300 230 330 230" />
+        <circle class="packet" r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
+        <circle class="packet v" r="4"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
+        <circle class="packet" r="4"><animateMotion dur="2.4s" begin=".6s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion></circle>
+        <circle class="packet" r="4"><animateMotion dur="2.4s" begin="1.8s" repeatCount="indefinite"><mpath href="#w4"/></animateMotion></circle>
+
+        <g class="node"><rect x="12" y="46" width="80" height="48" rx="12"/><text x="52" y="66">webhook</text><text class="sub" x="52" y="82">nova msg</text></g>
+        <g class="node"><rect x="12" y="206" width="80" height="48" rx="12"/><text x="52" y="226">agenda</text><text class="sub" x="52" y="242">a cada 1h</text></g>
+        <g class="node core"><rect x="190" y="118" width="72" height="64" rx="16"/><text x="226" y="146">agente</text><text class="sub" x="226" y="164">IA</text></g>
+        <g class="node"><rect x="330" y="46" width="80" height="48" rx="12"/><text x="370" y="66">SQL</text><text class="sub" x="370" y="82">postgres</text></g>
+        <g class="node"><rect x="330" y="206" width="80" height="48" rx="12"/><text x="370" y="226">resposta</text><text class="sub" x="370" y="242">whatsapp</text></g>
+        <circle class="ring" cx="226" cy="150" r="44" />
+      </svg>
+      <ol class="flow-log mono" id="flowLog" aria-live="off"></ol>
+    </figure>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="about">
+    <p class="label reveal">01 / sobre</p>
+    <div class="about-grid">
+      <h2 class="reveal">Do processo manual ao sistema que roda sozinho.</h2>
+      <div class="about-copy reveal">
+        <p>Automação de processos, agentes de IA e dados. Integração entre sistemas, modelagem de bancos PostgreSQL, rotinas em Python e SQL e orquestração de fluxos no n8n.</p>
+        <p>Desenvolvimento com apoio de <strong>inteligência artificial generativa</strong>, com revisão e explicação de tudo o que é entregue. Cada sistema acompanha testes, registro de execução e documentação legível por outras pessoas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="projects">
+    <p class="label reveal">02 / projetos</p>
+    <h2 class="reveal">Projetos selecionados</h2>
+    <p class="note reveal">Telas reais dos sistemas, rodando localmente com um banco simulado e dados 100% fictícios. Marca do cliente neutralizada; nenhum dado real aparece aqui.</p>
+
+    <!-- 1 AGENTES -->
+    <article class="card wide reveal" data-demo="agents">
+      <div class="card-copy">
+        <span class="tag">agentes de IA</span>
+        <h3>Plataforma de agentes de IA para atendimento comercial e marketing</h3>
+        <p>Agentes que atendem leads e acompanham as promessas feitas na conversa, para que nenhum retorno combinado fique esquecido.</p>
+        <ul class="metrics">
+          <li><b>&gt;250</b><span>promessas sob vigia</span></li>
+          <li><b>&gt;170</b><span>avaliações classificadas</span></li>
+          <li><b>&gt;100</b><span>respostas a avaliações</span></li>
+          <li><b>~60%</b><span>dos leads estavam ocultos por um limite; corrigido</span></li>
+        </ul>
+      </div>
+      <div class="demo shot" data-shots="agentes" aria-label="Telas reais do sistema de atendimento por agentes de IA, com dados fictícios">
+        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="mono">atendimento · conversas</span><span class="fict">dados fictícios</span></div>
+        <div class="shot-stage">
+          <figure class="frame on"><img src="assets/telas/agente-conversa.webp" width="1440" height="900" alt="Tela real do sistema de atendimento: conversa de um agente de IA com um lead fictício" decoding="async" loading="lazy" /></figure>
+          <div class="cursor" aria-hidden="true"></div>
+          <div class="callout" aria-hidden="true"></div>
+        </div>
+        <div class="shot-foot"><span class="shot-dots" aria-hidden="true"></span><p class="shot-cap"></p></div>
+      </div>
+    </article>
+
+    <!-- 2 ERP -->
+    <article class="card wide reveal" data-demo="erp">
+      <div class="card-copy">
+        <span class="tag">ERP</span>
+        <h3>Sistema de gestão integrado (ERP) para rede de escolas</h3>
+        <p>Um sistema só para as unidades de uma rede de escolas de música: cadastros, rotina administrativa e indicadores, com leitura automática do saldo de anúncios.</p>
+        <ul class="metrics">
+          <li><b>3</b><span>unidades</span></li>
+          <li><b>30+</b><span>usuários</span></li>
+          <li><b>150+</b><span>funções</span></li>
+          <li><b>100+</b><span>testes automatizados</span></li>
+          <li><b>~90</b><span>leituras/dia do saldo de anúncios</span></li>
+        </ul>
+      </div>
+      <div class="demo shot" data-shots="erp" aria-label="Telas reais do sistema de gestão, com dados fictícios">
+        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="mono">gestão · dashboard</span><span class="fict">dados fictícios</span></div>
+        <div class="shot-stage">
+          <figure class="frame on"><img src="assets/telas/erp-dashboard.webp" width="1440" height="900" alt="Tela real do dashboard do sistema de gestão, com indicadores fictícios" decoding="async" loading="lazy" /></figure>
+          <div class="cursor" aria-hidden="true"></div>
+          <div class="callout" aria-hidden="true"></div>
+        </div>
+        <div class="shot-foot"><span class="shot-dots" aria-hidden="true"></span><p class="shot-cap"></p></div>
+      </div>
+    </article>
+
+    <!-- 3 CAMPANHAS -->
+    <article class="card wide reveal" data-demo="campaigns">
+      <div class="card-copy">
+        <span class="tag">campanhas</span>
+        <h3>Plataforma de disparo e análise de campanhas (WhatsApp e Meta)</h3>
+        <p>Módulo de campanhas dentro do sistema de gestão: disparo segmentado por público pela API oficial do WhatsApp (Meta), agentes de IA nas respostas e análise de conversão em leads e matrículas. No site, um trabalho de SEO técnico limpou quase todos os avisos.</p>
+        <ul class="metrics">
+          <li><b>67 → 6</b><span>avisos de SEO em 4 semanas</span></li>
+          <li><b class="b-sm">WhatsApp + Meta</b><span>disparo segmentado e análise de campanhas</span></li>
+        </ul>
+      </div>
+      <div class="demo shot" data-shots="campanhas" aria-label="Telas reais do módulo de campanhas do sistema de gestão, com dados fictícios">
+        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="mono">gestão · campanhas</span><span class="fict">dados fictícios</span></div>
+        <div class="shot-stage">
+          <figure class="frame on"><img src="assets/telas/campanhas-dashboard.webp" width="1440" height="900" alt="Tela real do módulo de campanhas de WhatsApp, com campanhas fictícias" decoding="async" loading="lazy" /></figure>
+          <div class="cursor" aria-hidden="true"></div>
+          <div class="callout" aria-hidden="true"></div>
+        </div>
+        <div class="shot-foot"><span class="shot-dots" aria-hidden="true"></span><p class="shot-cap"></p></div>
+      </div>
+    </article>
+
+    <!-- 4 MCP -->
+    <article class="card card-wip reveal flip" data-demo="mcp">
+      <div class="card-copy">
+        <span class="tag tag-wip"><span class="pulse-dot"></span>em construção</span>
+        <h3>Servidor MCP em TypeScript sobre Postgres</h3>
+        <p>Um servidor MCP que deixa agentes de IA consultarem um banco PostgreSQL de exemplo, com dados fictícios, <strong>somente leitura</strong>. Vem com testes automatizados e evals que medem se o agente usa as ferramentas do jeito certo.</p>
+        <ul class="metrics metrics-text">
+          <li><span>TypeScript · PostgreSQL · MCP</span></li>
+          <li><span>Somente leitura por padrão</span></li>
+          <li><span>Testes e evals</span></li>
+        </ul>
+      </div>
+      <div class="demo demo-mcp" aria-label="Simulação de terminal: agente chamando ferramentas de leitura e escrita sendo bloqueada">
+        <div class="demo-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mono">mcp-server · dev</span></div>
+        <pre class="term mono" id="term"></pre>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot-big">Contato</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/hugo-milesi/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-ghost" href="https://github.com/hugomilesi" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <p class="mono mini foot-small">Hugo Milesi · site estático, sem rastreadores</p>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
